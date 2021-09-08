@@ -40,7 +40,7 @@ namespace First_One_Training.Controllers
         }
 
         [HttpPost]
-        public void AddUser(User user)
+        public void AddUser([FromBody]User user)
         {
             users.AddUser(user);
         }
